@@ -1,0 +1,77 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+$black: #25282A;
+$slate: #4B4F54;
+$blue: #6AD1E3;
+$green: #8FD6BD;
+$gray: #c9c9c9;
+
+  html {
+    background-color: $gray;
+  }
+  
+  body {
+    background-color: transparent;
+    padding-top: 6rem;
+    color: $black;
+  }
+
+  .row+.row {
+    margin-top: 1rem;
+  }
+  
+  a {
+    color: $blue;
+  }
+
+  .jumbotron {
+    box-shadow: 0px 0px 15px $gray;
+  }
+
+  .card {
+    box-shadow: 0px 0px 15px $gray;
+  }
+
+  .author {
+    color: $gray;
+  }
+
+  .mark-as-correct {
+    float: right;
+  }
+
+  .upvote {
+    margin-top: .5rem;
+    padding: 0.2rem;
+    font-size: 0.8em;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $slate;
+    border-radius: 5px;
+    width: 78px;
+    height: 78px;
+
+    span {
+      font-size: 0.7em;
+      color: $slate;
+      
+      &.number {
+        font-size: 1.1em;
+        color: inherit;
+      }
+    }
+
+    &.active {
+      border-color: $green;
+      .number {
+        color: $green
+      }
+    }
+  }
