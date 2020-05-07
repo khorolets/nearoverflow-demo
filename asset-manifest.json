@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nearoverflow-demo/static/css/main.063a68f2.chunk.css",
+    "main.js": "/nearoverflow-demo/static/js/main.7e118383.chunk.js",
+    "main.js.map": "/nearoverflow-demo/static/js/main.7e118383.chunk.js.map",
+    "runtime-main.js": "/nearoverflow-demo/static/js/runtime-main.789f39a8.js",
+    "runtime-main.js.map": "/nearoverflow-demo/static/js/runtime-main.789f39a8.js.map",
+    "static/js/2.8ef6eb23.chunk.js": "/nearoverflow-demo/static/js/2.8ef6eb23.chunk.js",
+    "static/js/2.8ef6eb23.chunk.js.map": "/nearoverflow-demo/static/js/2.8ef6eb23.chunk.js.map",
+    "index.html": "/nearoverflow-demo/index.html",
+    "precache-manifest.efec7ea1bdc3f688a976976d5d12f18c.js": "/nearoverflow-demo/precache-manifest.efec7ea1bdc3f688a976976d5d12f18c.js",
+    "service-worker.js": "/nearoverflow-demo/service-worker.js",
+    "static/css/main.063a68f2.chunk.css.map": "/nearoverflow-demo/static/css/main.063a68f2.chunk.css.map",
+    "static/js/2.8ef6eb23.chunk.js.LICENSE.txt": "/nearoverflow-demo/static/js/2.8ef6eb23.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.789f39a8.js",
+    "static/js/2.8ef6eb23.chunk.js",
+    "static/css/main.063a68f2.chunk.css",
+    "static/js/main.7e118383.chunk.js"
+  ]
+}
