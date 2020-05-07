@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nearoverflow-demo/precache-manifest.9589fc3b0ab369636c92782bf7ee5e3a.js"
+  "/nearoverflow-demo/precache-manifest.337e8166f699474e3869c23a357936aa.js"
 );
 
 self.addEventListener('message', (event) => {
