@@ -11,7 +11,7 @@ import QuestionDetail from './components/QuestionDetail'
 
 
 export default () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <App>
       <Switch>
         <Route exact path='/'>
@@ -22,5 +22,5 @@ export default () => (
         </Route>
       </Switch>
     </App>
-  </Router>
+  </Router >
 )

@@ -28,10 +28,11 @@ class App extends React.Component {
 
   signOut = () => {
     this.props.wallet.signOut()
-    window.location.href = '/'
+    window.location.href = process.env.PUBLIC_URL
   }
 
   render() {
+    console.log(process.env.NODE_ENV)
     return (
       <>
         <Header
