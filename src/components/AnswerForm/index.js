@@ -10,6 +10,11 @@ class AnswerForm extends React.Component {
   static propTypes = {
     contract: PropTypes.object.isRequired,
     questionId: PropTypes.string.isRequired,
+    currentUser: PropTypes.object,
+  }
+
+  static defaultProps = {
+    currentUser: null,
   }
 
   state = { content: '' }
@@ -43,15 +48,26 @@ class AnswerForm extends React.Component {
                 <Form.Group>
                   <Form.Control
                     type="text"
-                    placeholder="Answer"
+                    placeholder={
+                      this.props.currentUser
+                        ? "Answer"
+                        : "You have to be authenticated to post an answer"
+                    }
                     value={this.state.content}
+                    disabled={!this.props.currentUser}
                     onChange={(e) => this.setState({ content: e.target.value })}
                   />
                 </Form.Group>
                 <Alert variant='secondary'>
                   To post an answer costs 1 Ⓝ but then you have a chance to grab the question reward.
                   </Alert>
-                <Button type="submit" variant="outline-dark">Submit answer</Button>
+                <Button
+                  type="submit"
+                  variant="outline-dark"
+                  disabled={!this.props.currentUser}
+                >
+                  Submit answer
+                </Button>
               </Form>
             </Card.Body>
           </Card>
@@ -63,6 +79,7 @@ class AnswerForm extends React.Component {
 
 
 const mapStateToProps = state => ({
+  currentUser: state.commonReducer.currentUser,
   contract: state.commonReducer.contract,
 })
 

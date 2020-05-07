@@ -49,6 +49,7 @@ class Answer extends React.Component {
                   className="upvote"
                   variant="outline-dark"
                   sime='sm'
+                  disabled={!this.props.currentUser}
                   onClick={this.handleUpvote}
                 >
                   Upvote 1 Ⓝ
